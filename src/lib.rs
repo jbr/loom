@@ -161,6 +161,10 @@
 //!     pub(crate) fn with_mut<R>(&self, f: impl FnOnce(*mut T) -> R) -> R {
 //!         f(self.0.get())
 //!     }
+//!
+//!     pub(crate) fn into_inner(self) -> T {
+//!         self.0.into_inner()
+//!     }
 //! }
 //! ```
 //!
